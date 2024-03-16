@@ -7,10 +7,10 @@ const outcomeDisplay = document.querySelector("#outcome-display");
 const playerChoice = document.querySelector("#player-choice");
 const computerChoice = document.querySelector("#computer-choice");
 
-const questionMarkEmoji = "images/question-mark";
-const rockEmoji = document.querySelector(".rock").src;
-const paperEmoji = document.querySelector(".paper").src;
-const scissorEmoji = document.querySelector(".scissor").src;
+const questionMarkEmoji = "images/question-mark.svg";
+const rockEmoji = "images/rock.svg";
+const paperEmoji = "images/paper.svg"
+const scissorEmoji = "images/scissors.svg";
 
 
 function displayChoice(display ,input){
