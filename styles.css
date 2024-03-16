@@ -163,4 +163,10 @@ footer{
     h1 {
         font-size: 1.8em;
     }
+    #modal>button{
+        font-size: 20px;
+    }
+    main{
+        justify-content: space-evenly;
+    }
 }
