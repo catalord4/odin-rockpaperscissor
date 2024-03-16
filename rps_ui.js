@@ -7,24 +7,24 @@ const outcomeDisplay = document.querySelector("#outcome-display");
 const playerChoice = document.querySelector("#player-choice");
 const computerChoice = document.querySelector("#computer-choice");
 
-const questionMarkEmoji = playerChoice.textContent;
-const rockEmoji = document.querySelector(".rock").textContent;
-const paperEmoji = document.querySelector(".paper").textContent;
-const scissorEmoji = document.querySelector(".scissor").textContent;
+const questionMarkEmoji = "images/question-mark";
+const rockEmoji = document.querySelector(".rock").src;
+const paperEmoji = document.querySelector(".paper").src;
+const scissorEmoji = document.querySelector(".scissor").src;
 
 
 function displayChoice(display ,input){
     if(input == "ROCK")
     {
-        display.textContent = rockEmoji;
+        display.src = rockEmoji;
     }
     else if(input == "PAPER")
     {
-        display.textContent = paperEmoji;
+        display.src = paperEmoji;
     }
     else if(input == "SCISSOR")
     {
-        display.textContent = scissorEmoji;
+        display.src = scissorEmoji;
     }
 }
 
@@ -102,8 +102,8 @@ function resetUI()
 {
     outcomeDisplay.textContent = "Best of five wins \r\n Good Luck ";
 
-    playerChoice.textContent = questionMarkEmoji;
-    computerChoice.textContent = questionMarkEmoji;
+    playerChoice.src = questionMarkEmoji;
+    computerChoice.src = questionMarkEmoji;
     
     modal.classList.toggle(("active"));
     overlay.classList.toggle(("active"));

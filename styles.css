@@ -54,18 +54,26 @@ main{
 
     font-size: 75px;
 }
+#game-state>img{
+    width: 70px;
+    height: 70px;
+}
 .game-button{
     height: 200px;
     width: 200px;
     color: #c9a419;
 
-    font-size: 75px;
 
     background-color: #27282b;
     border-radius: 15px;   
     border: 0;
     cursor: pointer;
 
+}
+
+.game-button>img{
+    width: 80px;
+    height: 80px;
 }
 .game-button:hover{
     background-color: #292b2e;
