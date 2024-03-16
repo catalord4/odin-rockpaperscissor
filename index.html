@@ -6,7 +6,42 @@
     <title>Rock Paper Scissors</title>
     
     <script defer src="rps_game_logic.js"></script>
+    <script defer src="rps_ui.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.svg">
 </head>
 <body>
+    <header>
+        <h1>Rock, Paper, Scissor</h1>
+    </header>
+    <main>
+
+        <div id="scoreboard">
+            <h1 id="outcome-display">Best of five wins <br> Good Luck </h1>
+            <div id="score-display">
+                <span id="player-score">0</span>
+                <span>-</span>
+                <span id="computer-score">0</span>
+            </div>
+        </div>
+        <div id="game-state">
+            <p id="player-choice">❔</p>
+            <p id="computer-choice">❔</p>
+        </div>
+        <div id="rps-buttons">
+            <button class="game-button rock">🪨</button>
+            <button class="game-button paper">🧾</button>
+            <button class="game-button scissor">✂️</button>
+        </div>
+    </main>
+    <footer>
+        <p>Made with passion by Catalin Popescu</p>
+    </footer>
+
+    <div id="modal">
+        <p id="endgame-outcome"></p>
+        <button id="reset-button">Play Again?</button>
+    </div>
+    <div id="overlay"></div>
 </body>
 </html>
